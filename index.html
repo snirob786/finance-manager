@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Font Linking -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Finance Manager</title>
+  </head>
+  <body>
+    <!-- Main Header Section -->
+    <header id="main-header">
+      <div class="container">
+        <h1 id="site-title">Finance Manager</h1>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="container split-container">
+        <div class="left-content image-container">
+          <img id="main-image" src="images/finance.jpg" alt="">
+        </div>
+
+        <div class="right-content">
+
+          <div id="neg-error-message" class="error-hide">Error section</div>
+          <div id="nan-error-message" class="error-hide">Error section</div>
+<!--          Income Container-->
+          <div class="income-container">
+            <div id="income-section">
+              <h3 class="text-center">Income</h3>
+              <div class="input-container">
+                <span>Income:</span>
+                <input id="income-input" type="text" value="10000">
+              </div>
+            </div>
+          </div>
+
+<!--          Expense Container-->
+          <div class="expense-container">
+            <div id="expense-section">
+              <h3 class="text-center">Expense</h3>
+              <div class="input-container">
+                <span>Food:</span>
+                <input id="food-exp-input" type="text" value="3000">
+              </div>
+              <div class="input-container">
+                <span>Rent:</span>
+                <input id="rent-exp-input" type="text" value="2000">
+              </div>
+              <div class="input-container">
+                <span>Clothes:</span>
+                <input id="clothes-exp-input" type="text" value="1000">
+              </div>
+            </div>
+          </div>
+          <button id="calculate-btn" class="btn">Calculate</button>
+
+          <div class="total-expense">
+            <h3>Total Expense: <span id="total-expense">5000</span></h3>
+          </div>
+
+          <div class="total-balance">
+            <h3>Balance: <span id="total-balance">4500</span></h3>
+          </div>
+
+          <div id="save-container">
+            <div id="save-neg-error-message" class="error-hide">Error section</div>
+            <div class="save-input-section">
+              <span>Save:</span>
+              <input id="save-input" type="text" value="20">
+              <span>%</span>
+              <button id="save-btn" class="btn">Save</button>
+            </div>
+            <h3>Saving Amount: <span id="save-amount">2000</span></h3>
+            <h3>Remaining Amount: <span id="remain-amount">2500</span></h3>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
